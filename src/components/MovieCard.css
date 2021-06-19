@@ -1,0 +1,79 @@
+.movieCard {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  transition: width 1s ease-in-out 1s;
+}
+
+.card:hover {
+  box-shadow: 5px 8px #888888;
+}
+
+.movieCard_media {
+  height: 400px;
+  width: 350px;
+  object-fit: contain;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 1s ease-in-out 1s;
+}
+
+.movieCard_media:hover{
+  width: 380px;
+}
+
+.movieCard__contain{
+  display: flex;
+  align-items:center ;
+  justify-content: space-between;
+}
+
+.movieCard_overview {
+  background-color: black;
+  color: white;
+  height: 380px;
+  overflow-y: scroll;
+  position: absolute;
+ top:0;
+ left:10px;
+ right:10px;
+ transform: translateX(500px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movieCard_overview1 {
+  height: 390px;
+  overflow: scroll;
+}
+
+.card:hover {
+  box-shadow: 5px 8px #888888;
+}
+
+.movieCard:hover .movieCard_overview {
+  transform: translateX(0%);
+}
+
+.movieCard_overview::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.movieCard_overview {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.movieCard_overview1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.movieCard_overview1 {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+

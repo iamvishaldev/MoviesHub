@@ -1,0 +1,14 @@
+.genres {
+    margin-top: 110px;
+  }
+  
+  .genres_cate {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+  
+  .genres_cate > Button {
+    margin-right: 20px;
+    text-transform: inherit;
+  }
